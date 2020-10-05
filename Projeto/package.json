@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "formidable": "^1.2.2",
     "fs": "0.0.1-security",
     "fs-extra": "^9.0.1",
+    "heroku": "^7.44.0",
     "js-yaml": "^3.14.0",
     "mongodb": "^3.6.1",
     "node-serialize": "0.0.4",
