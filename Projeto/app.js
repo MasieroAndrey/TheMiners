@@ -31,6 +31,10 @@ try {
 }
 
 
+
+
+
+
 const usuarios = require('./src/routes/usuarios.route');
 const interesses = require('./src/routes/interesse.route');
 const eventos = require('./src/routes/eventos.route');
@@ -71,5 +75,8 @@ app.use((error, req, res, next) => {
 })
 
 
-
+if(process.env.PORT == null) 
+   {
+    app.listen(process.env.PORT)
+}
 app.listen(data['port'])
